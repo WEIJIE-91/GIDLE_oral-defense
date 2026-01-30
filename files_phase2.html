@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次口試檔案下載</title>
+    <style>
+        /* 共用 CSS */
+        body { font-family: "Microsoft JhengHei", "Heiti TC", Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; flex-direction: column; }
+        .container { width: 90%; max-width: 800px; background-color: #ffffff; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; margin: 40px auto; flex: 1; }
+        h1 { color: #333; margin-bottom: 10px; }
+        .alert-text { color: #d9534f; font-weight: bold; font-size: 1.1em; margin-bottom: 5px; }
+        p.subtitle { color: #666; margin-bottom: 30px; margin-top: 5px; }
+        
+        /* 返回按鈕 */
+        .nav-bar { text-align: left; margin-bottom: 20px; }
+        .btn-back { display: inline-flex; align-items: center; color: #666; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: color 0.3s; }
+        .btn-back:hover { color: #e24a4a; } /* 紅色 hover */
+        .btn-back span { margin-left: 5px; }
+
+        /* 卡片設計 - 紅色主題 */
+        .section-card { background-color: #fff; border: 2px solid #e24a4a; /* 紅色邊框 */ border-radius: 10px; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; overflow: hidden; margin-bottom: 20px; }
+        .card-header { padding: 20px; background-color: #f9f9f9; border-bottom: 2px solid #e24a4a; }
+        .section-title { font-size: 1.5em; font-weight: bold; color: #2c3e50; margin: 0; }
+
+        /* 檔案列表 */
+        .files-container { padding: 10px 30px 30px 30px; background-color: #fff; text-align: left; }
+        .file-list { list-style: none; padding: 0; }
+        .file-item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px dashed #eee; }
+        .file-item:last-child { border-bottom: none; }
+        .file-info { display: flex; flex-direction: column; padding-right: 15px; }
+        .file-name { font-size: 1.1em; color: #333; font-weight: 600; }
+        .file-note { font-size: 0.9em; color: #888; margin-top: 4px; line-height: 1.4; }
+
+        /* 下載按鈕 (紅色) */
+        .btn-download { background-color: #e24a4a; color: white; text-decoration: none; padding: 8px 16px; border-radius: 5px; font-size: 0.9em; white-space: nowrap; transition: background 0.3s; align-self: center; }
+        .btn-download:hover { background-color: #c0392b; }
+
+        footer { width: 100%; text-align: center; padding: 20px 0; color: #999; font-size: 0.85em; margin-top: auto; border-top: 1px solid #e0e0e0; background-color: #fafafa; }
+        .author { font-weight: bold; color: #777; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+            <a href="index.html" class="btn-back">&larr; <span>返回流程總覽</span></a>
+        </div>
+
+        <h1>第二次口試檔案下載</h1>
+        <div class="alert-text">※ 這是學位口試專用頁面</div>
+        <p class="subtitle">請下載下方列表中的文件，注意時程規定</p>
+
+        <div class="section-card">
+            <div class="card-header">
+                <div class="section-title">第二次口試 (學位口試)</div>
+            </div>
+
+            <div class="files-container">
+                <ul class="file-list">
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">1. 口試申請表</span>
+                            <span class="file-note">申請人每人一份</span>
+                        </div>
+                        <a href="files/final_app.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">2. Email 邀請範本</span>
+                            <span class="file-note">按照不同口委與階段寄信</span>
+                        </div>
+                        <a href="files/email_template.txt" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">3. 海報與桌牌格式</span>
+                            <span class="file-note">海報需要一份，桌牌按照口委名稱和學校修改</span>
+                        </div>
+                        <a href="files/poster_nameplate.ppt" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">4. 領據</span>
+                            <span class="file-note">須看教授數量列印，金額參考申請流程 (車馬費限校外委員且僅一次)</span>
+                        </div>
+                        <a href="files/receipt.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">5. 口試評分表</span>
+                            <span class="file-note">看幾位委員就印幾份</span>
+                        </div>
+                        <a href="files/final_score.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">6. 指導教授推薦書</span>
+                            <span class="file-note">申請人每人一份</span>
+                        </div>
+                        <a href="files/recommendation.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">7. 委員審定書</span>
+                            <span class="file-note">申請人每人一份</span>
+                        </div>
+                        <a href="files/approval.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                    <li class="file-item">
+                        <div class="file-info">
+                            <span class="file-name">8. 領域審查申請表</span>
+                            <span class="file-note">申請人每人一份</span>
+                        </div>
+                        <a href="files/field_review.doc" class="btn-download" target="_blank">下載</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <span class="author">Designed by 嘉瑜家 Jora</span>
+            <span class="version-log">Ver 4.0 (2026/01/30) - Phase 2 Page</span>
+        </div>
+    </footer>
+</body>
+</html>
